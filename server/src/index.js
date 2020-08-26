@@ -24,7 +24,7 @@ mongoose.connect(db, {useNewUrlParser: true})
 app.use(morgan('common'));
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CORS_ORIGIN,
+  origin: "http://localhost:3004",
 }));
 
 app.get('/', (req, res) => {
